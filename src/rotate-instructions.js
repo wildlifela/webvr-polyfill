@@ -25,7 +25,7 @@ function RotateInstructions() {
   s.right = 0;
   s.bottom = 0;
   s.left = 0;
-  s.backgroundColor = 'gray';
+  s.backgroundColor = '#0098CE';
   s.fontFamily = 'sans-serif';
   // Force this to be above the fullscreen canvas, which is at zIndex: 999999.
   s.zIndex = 1000000;
@@ -48,37 +48,37 @@ function RotateInstructions() {
   text.innerHTML = 'Place your phone into your Cardboard viewer.';
   overlay.appendChild(text);
 
-  var snackbar = document.createElement('div');
-  var s = snackbar.style;
-  s.backgroundColor = '#CFD8DC';
-  s.position = 'fixed';
-  s.bottom = 0;
-  s.width = '100%';
-  s.height = '48px';
-  s.padding = '14px 24px';
-  s.boxSizing = 'border-box';
-  s.color = '#656A6B';
-  overlay.appendChild(snackbar);
-
-  var snackbarText = document.createElement('div');
-  snackbarText.style.float = 'left';
-  snackbarText.innerHTML = 'No Cardboard viewer?';
-
-  var snackbarButton = document.createElement('a');
-  snackbarButton.href = 'https://www.google.com/get/cardboard/get-cardboard/';
-  snackbarButton.innerHTML = 'get one';
-  snackbarButton.target = '_blank';
-  var s = snackbarButton.style;
-  s.float = 'right';
-  s.fontWeight = 600;
-  s.textTransform = 'uppercase';
-  s.borderLeft = '1px solid gray';
-  s.paddingLeft = '24px';
-  s.textDecoration = 'none';
-  s.color = '#656A6B';
-
-  snackbar.appendChild(snackbarText);
-  snackbar.appendChild(snackbarButton);
+  // var snackbar = document.createElement('div');
+  // var s = snackbar.style;
+  // s.backgroundColor = '#CFD8DC';
+  // s.position = 'fixed';
+  // s.bottom = 0;
+  // s.width = '100%';
+  // s.height = '48px';
+  // s.padding = '14px 24px';
+  // s.boxSizing = 'border-box';
+  // s.color = '#656A6B';
+  // overlay.appendChild(snackbar);
+  //
+  // var snackbarText = document.createElement('div');
+  // snackbarText.style.float = 'left';
+  // snackbarText.innerHTML = 'No Cardboard viewer?';
+  //
+  // var snackbarButton = document.createElement('a');
+  // snackbarButton.href = 'https://www.google.com/get/cardboard/get-cardboard/';
+  // snackbarButton.innerHTML = 'get one';
+  // snackbarButton.target = '_blank';
+  // var s = snackbarButton.style;
+  // s.float = 'right';
+  // s.fontWeight = 600;
+  // s.textTransform = 'uppercase';
+  // s.borderLeft = '1px solid gray';
+  // s.paddingLeft = '24px';
+  // s.textDecoration = 'none';
+  // s.color = '#656A6B';
+  //
+  // snackbar.appendChild(snackbarText);
+  // snackbar.appendChild(snackbarButton);
 
   this.overlay = overlay;
   this.text = text;
